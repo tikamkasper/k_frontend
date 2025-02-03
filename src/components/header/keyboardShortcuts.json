@@ -1,0 +1,156 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+k j", // Toggle Activity Bar
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+k ;", // Toggle Primary Side Bar
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+k k", // Toggle Full Screen
+    "command": "workbench.action.toggleFullScreen",
+    "when": "!isIOS"
+  },
+  {
+    "key": "ctrl+k l", // Toggle Status Bar
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  /*<----------------------------------------------------------------->*/
+  /*<---------- Cursor Movements --------------------->*/
+  {
+    "key": "alt+j", // Cursor Left
+    "command": "cursorLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+;", // Cursor Right
+    "command": "cursorRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+k", // Cursor Up
+    "command": "cursorUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l", //Cursor Down
+    "command": "cursorDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+h", // Cursor Home
+    "command": "cursorHome",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+'", // Cursor End
+    "command": "cursorEnd",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+u", //Cursor Top
+    "command": "cursorTop",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+m", // Cursor Bottom
+    "command": "cursorBottom",
+    "when": "editorTextFocus"
+  },
+  /*<---------------------------------------->*/
+  /*<----- Focus Active Editor Group ----->*/
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  /*<---------------------------------------->*/
+  /*<------- Create New File and New Folder ---------->*/
+{
+  "key": "f", // Create New File
+  "command": "explorer.newFile",
+  "when": "explorerViewletFocus && !inputFocus"
+},
+{
+  "key": "d", // Create New Folder
+  "command": "explorer.newFolder",
+  "when": "explorerViewletFocus && !inputFocus"
+},
+  /*<--------------------------->*/
+  /*<------- terminal ---------->*/
+  {
+    "key": "ctrl+j", // Open terminal
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+},
+{
+    "key": "ctrl+j", // Toggle maximize panel
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminal.active"
+},
+{
+  "key": "ctrl+j", // Toggle panel
+  "command": "workbench.action.togglePanel",
+  "when": "panelMaximized"
+},
+{
+  "key": "ctrl+j", //Focus on active terminal
+  "command": "terminal.focus",
+  "when": "!terminalFocus"
+},
+{
+  "key": "ctrl+k n", // Create new terminal
+  "command": "workbench.action.terminal.new",
+  "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+},
+{
+  "key": "ctrl+k ,", // kill current terminal
+  "command": "workbench.action.terminal.kill",
+},
+{
+  "key": "ctrl+k a", // kill All terminal
+  "command": "workbench.action.terminal.killAll",
+},
+{
+  "key": "ctrl+k .", // Rename current terminal
+  "command": "workbench.action.terminal.rename"
+},
+// Switch terminal using by number 1,2,3,...9
+{
+  "key": "ctrl+k 1",
+  "command": "workbench.action.terminal.focusAtIndex1"
+},
+{
+  "key": "ctrl+k 2",
+  "command": "workbench.action.terminal.focusAtIndex2"
+},
+{
+  "key": "ctrl+k 3",
+  "command": "workbench.action.terminal.focusAtIndex3"
+},
+{
+  "key": "ctrl+k 4",
+  "command": "workbench.action.terminal.focusAtIndex4"
+},
+{
+  "key": "ctrl+k 5",
+  "command": "workbench.action.terminal.focusAtIndex5",
+},
+{
+  "key": "ctrl+k 6",
+  "command": "workbench.action.terminal.focusAtIndex6",
+},
+{
+  "key": "ctrl+k 7",
+  "command": "workbench.action.terminal.focusAtIndex7",
+},
+{
+  "key": "ctrl+k 8",
+  "command": "workbench.action.terminal.focusAtIndex8",
+},
+{
+  "key": "ctrl+k 9",
+  "command": "workbench.action.terminal.focusAtIndex9",
+}
+]
